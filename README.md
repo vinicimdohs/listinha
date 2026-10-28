@@ -29,3 +29,17 @@ Go, usando a biblioteca padrão sempre que possível.
 ```sh
 go run ./cmd/listinha
 ```
+
+## Desenvolvimento
+
+| O quê | Comando |
+|---|---|
+| Rodar os testes | `go test ./...` |
+| Formatar o código | `gofmt -w .` |
+| Rodar o linter | `go vet ./...` |
+
+O pre-commit hook em `.githooks/pre-commit` confere a formatação, roda o linter e os testes antes de cada commit. Para ativá-lo, rode uma vez após clonar:
+
+```sh
+git config core.hooksPath .githooks
+```
