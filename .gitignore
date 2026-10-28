@@ -1,0 +1,8 @@
+# Binários
+/bin/
+*.exe
+*.test
+*.out
+
+# Variáveis de ambiente (documentadas em .env.example)
+.env
